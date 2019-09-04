@@ -3,7 +3,7 @@ set -eux
 export FLAGS_eager_delete_tensor_gb=0
 export FLAGS_sync_nccl_allreduce=1
 export CUDA_VISIBLE_DEVICES=0
-export TASK_DATA_PATH=/content/task_data_zh/task_data/chnsenticorp
+export TASK_DATA_PATH=/content
 export MODEL_PATH=/content/ernie_model
 
 python -u run_classifier.py \
