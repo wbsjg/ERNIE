@@ -15,8 +15,8 @@ python -u run_classifier.py \
                    --batch_size 24 \
                    --init_pretraining_params ${MODEL_PATH}/params \
                    --train_set ${TASK_DATA_PATH}/chnsenticorp/train.tsv \
-                   --dev_set ${TASK_DATA_PATH}/chnsenticorp/dev.tsv,${TASK_DATA_PATH}/chnsenticorp/test.tsv \
-                   --test_set ${TASK_DATA_PATH}/chnsenticorp/test_1.tsv \
+                   --dev_set ${TASK_DATA_PATH}/chnsenticorp/dev.tsv \
+                   --test_set ${TASK_DATA_PATH}/chnsenticorp/test.tsv \
                    --test_save ${TASK_DATA_PATH}/chnsenticorp/test_out.tsv \
                    --vocab_path ${MODEL_PATH}/vocab.txt \
                    --checkpoints ./checkpoints \
@@ -24,7 +24,7 @@ python -u run_classifier.py \
                    --weight_decay  0.01 \
                    --warmup_proportion 0.0 \
                    --validation_steps 100 \
-                   --epoch 10 \
+                   --epoch 1 \
                    --max_seq_len 256 \
                    --ernie_config_path ${MODEL_PATH}/ernie_config.json \
                    --learning_rate 5e-5 \
