@@ -7,7 +7,7 @@ export TASK_DATA_PATH=/content/task_data_zh/task_data
 export MODEL_PATH=/content/ernie_model
 
 python -u run_classifier.py \
-                   --use_cuda true \
+                   --use_cuda false \
                    --verbose true \
                    --do_train true \
                    --do_val true \
