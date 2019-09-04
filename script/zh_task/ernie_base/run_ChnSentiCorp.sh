@@ -31,3 +31,5 @@ python -u run_classifier.py \
                    --num_iteration_per_drop_scope 1 \
                    --num_labels 2 \
                    --random_seed 1
+                   --predict_batch_size 24
+
