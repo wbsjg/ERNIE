@@ -13,7 +13,7 @@ python ./pretrain_launch.py  \
                 --use_fast_executor True \
                 --weight_sharing True \
                 --in_tokens true \
-                --batch_size 8192 \
+                --batch_size 24 \
                 --vocab_path ./config/vocab.txt \
                 --train_filelist ./data/train_filelist \
                 --valid_filelist ./data/valid_filelist \
