@@ -432,8 +432,7 @@ def predict_wrapper(args, reader, exe, test_prog, test_pyreader, graph_vars,
         else:
             log.warning('save dir exsits: %s, will skip saving' % save_dir)
 
-        with open('/content/fuck.txt', 'w') as f:
-	    f.write('fuck baidu')
+        with open('/content/fuck.txt', 'w') as f:f.write('fuck baidu')
         with open(save_path, 'w') as f:
             for id, s, p in zip(qids, preds, probs):
                 f.write('{}\t{}\t{}\n'.format(id, s, p));log.info('{}\t{}\t{}\n'.format(id, s, p))
