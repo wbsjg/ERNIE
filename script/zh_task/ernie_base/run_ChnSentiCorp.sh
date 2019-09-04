@@ -18,7 +18,7 @@ python -u run_classifier.py \
                    --dev_set ${TASK_DATA_PATH}/dev.tsv \
                    --test_set ${TASK_DATA_PATH}/test.tsv \
                    --vocab_path ${MODEL_PATH}/vocab.txt \
-                   --test_save /content/output/test_out.tsv \
+                   --test_save /content/drive/My Drive/output/test_out.tsv \
                    --checkpoints /content/checkpoints \
                    --save_steps 100 \
                    --weight_decay  0.01 \
