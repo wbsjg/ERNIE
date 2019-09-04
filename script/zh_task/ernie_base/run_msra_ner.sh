@@ -17,7 +17,7 @@ python -u run_sequence_labeling.py \
                    --chunk_scheme "IOB" \
                    --label_map_config ${TASK_DATA_PATH}/msra_ner/label_map.json \
                    --train_set ${TASK_DATA_PATH}/msra_ner/train.tsv \
-   		             --dev_set ${TASK_DATA_PATH}/msra_ner/dev.tsv,${TASK_DATA_PATH}/msra_ner/test.tsv \
+       --dev_set ${TASK_DATA_PATH}/msra_ner/dev.tsv,${TASK_DATA_PATH}/msra_ner/test.tsv \
                    --test_set ${TASK_DATA_PATH}/msra_ner/test.tsv \
                    --vocab_path ${MODEL_PATH}/vocab.txt \
                    --ernie_config_path ${MODEL_PATH}/ernie_config.json \
