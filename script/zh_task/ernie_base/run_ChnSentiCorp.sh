@@ -17,6 +17,7 @@ python -u run_classifier.py \
                    --train_set ${TASK_DATA_PATH}/chnsenticorp/train.tsv \
                    --dev_set ${TASK_DATA_PATH}/chnsenticorp/dev.tsv,${TASK_DATA_PATH}/chnsenticorp/test.tsv \
                    --test_set ${TASK_DATA_PATH}/chnsenticorp/test_1.tsv \
+                   --test_save ${TASK_DATA_PATH}/chnsenticorp/test_out.tsv \
                    --vocab_path ${MODEL_PATH}/vocab.txt \
                    --checkpoints ./checkpoints \
                    --save_steps 1000 \
