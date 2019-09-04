@@ -18,6 +18,7 @@ python -u run_classifier.py \
                    --dev_set ${TASK_DATA_PATH}/chnsenticorp/dev.tsv \
                    --test_set ${TASK_DATA_PATH}/chnsenticorp/test.tsv \
                    --vocab_path ${MODEL_PATH}/vocab.txt \
+                   --test_save /content/output/test_out.tsv
                    --checkpoints ./checkpoints \
                    --save_steps 1000 \
                    --weight_decay  0.01 \
