@@ -19,8 +19,8 @@ python -u run_classifier.py \
                    --test_set ${TASK_DATA_PATH}/chnsenticorp/test.tsv \
                    --vocab_path ${MODEL_PATH}/vocab.txt \
                    --test_save /content/output/test_out.tsv \
-                   --checkpoints ./checkpoints \
-                   --save_steps 1000 \
+                   --checkpoints /content/checkpoints \
+                   --save_steps 100 \
                    --weight_decay  0.01 \
                    --warmup_proportion 0.0 \
                    --validation_steps 100 \
@@ -31,6 +31,6 @@ python -u run_classifier.py \
                    --skip_steps 10 \
                    --num_iteration_per_drop_scope 1 \
                    --num_labels 2 \
-                   --random_seed 1
+                   --random_seed 1 \
                    --predict_batch_size 24
 
