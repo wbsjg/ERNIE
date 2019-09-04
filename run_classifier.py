@@ -425,7 +425,7 @@ def predict_wrapper(args, reader, exe, test_prog, test_pyreader, graph_vars,
             graph_vars,
             is_classify=args.is_classify,
             is_regression=args.is_regression)
-
+        log.info(preds)
         save_dir = os.path.dirname(save_path)
         if not os.path.exists(save_dir):
             os.makedirs(save_dir)
