@@ -32,5 +32,5 @@ python -u run_sequence_labeling.py \
                    --learning_rate 5e-5 \
                    --skip_steps 10 \
                    --num_iteration_per_drop_scope 1 \
-                   --random_seed 1
+                   --random_seed 1 \
                    --predict_batch_size 16
