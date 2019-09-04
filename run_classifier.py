@@ -406,6 +406,8 @@ def predict_wrapper(args, reader, exe, test_prog, test_pyreader, graph_vars,
     save_dirs = args.test_save.split(',')
     assert len(test_sets) == len(save_dirs)
 
+    print(test_sets, save_dirs)
+
     for test_f, save_f in zip(test_sets, save_dirs):
         test_pyreader.decorate_tensor_provider(
             reader.data_generator(
@@ -435,6 +437,9 @@ def predict_wrapper(args, reader, exe, test_prog, test_pyreader, graph_vars,
         with open(save_path, 'w') as f:
             for id, s, p in zip(qids, preds, probs):
                 f.write('{}\t{}\t{}\n'.format(id, s, p))
+		
+		
+		print(id,s,p)
 
 
 if __name__ == '__main__':
