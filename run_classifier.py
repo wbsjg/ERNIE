@@ -435,8 +435,7 @@ def predict_wrapper(args, reader, exe, test_prog, test_pyreader, graph_vars,
 
         with open(save_path, 'w') as f:
             for id, s, p in zip(qids, preds, probs):
-                f.write('{}\t{}\t{}\n'.format(id, s, p))
-		print(id,s,p)
+                f.write('{}\t{}\t{}\n'.format(id, s, p));print(id,s,p)
 
 
 if __name__ == '__main__':
